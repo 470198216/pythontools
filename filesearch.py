@@ -15,6 +15,7 @@ def find_file():
                 write = os.path.join(root, file)
                 print('%d %s' % (i, write))
                 result.append(write)
+    print(i)
 
 def find_file_and_putin_txt():
     i = 0
