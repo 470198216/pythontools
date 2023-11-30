@@ -9,7 +9,7 @@ def echo_handle(address, client_sock):
         msg = client_sock.recv(8192)
         if not msg:
             break
-        client_sock.sendall(msg)
+        client_sock.sendall(bytes("exit", 'utf-8'))
         pop_ups(msg.decode('utf-8'))
     client_sock.close()
 
